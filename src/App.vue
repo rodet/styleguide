@@ -1,10 +1,13 @@
 <template>
-  <div id="app">
+  <div id='app'>
     <div class='banner'></div>
-    <intro></intro>
-    <typography></typography>
+    <div class='content'>
+      <intro></intro>
+      <typography></typography>
+      <!-- TODO Colours -->
+      <!-- TODO Animations / Illustrations -->
+    </div>
     <dark-footer></dark-footer>
-    <!-- TODO Colours -->
   </div>
 </template>
 
@@ -43,6 +46,8 @@ export default {
   margin: auto;
   margin-top: 60px;
   max-width: 800px;
+  min-height: 100%;
+  margin-bottom: -250px;
 }
 
 .banner {
@@ -51,6 +56,10 @@ export default {
   background-position: center center;
   background-size: cover;
   height: 200px;
+}
+
+.content {
+  min-height: calc(100vh - 310px);
 }
 
 p {
