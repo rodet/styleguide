@@ -5,6 +5,7 @@
       <intro></intro>
       <typography></typography>
       <!-- TODO Colours -->
+      <layout></layout>
       <!-- TODO Animations / Illustrations -->
     </div>
     <dark-footer></dark-footer>
@@ -14,6 +15,7 @@
 <script>
 import DarkFooter from './components/DarkFooter.vue';
 import Intro from './components/Intro.vue';
+import Layout from './components/Layout.vue';
 import Navigation from './components/Navigation.vue';
 import Typography from './components/Typography.vue';
 
@@ -22,6 +24,7 @@ export default {
   components: {
     DarkFooter,
     Intro,
+    Layout,
     Navigation,
     Typography,
   },
@@ -74,6 +77,7 @@ h4 {
   font-family: Avenir, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   color: #2e3673;
   margin-top: 1.5em;
+  line-height: initial;
 }
 
 h4 {
