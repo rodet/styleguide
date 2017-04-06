@@ -6,6 +6,7 @@
       <typography></typography>
       <!-- TODO Colours -->
       <layout></layout>
+      <colors></colors>
       <!-- TODO Animations / Illustrations -->
     </div>
     <dark-footer></dark-footer>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+import Colors from './components/Colors.vue';
 import DarkFooter from './components/DarkFooter.vue';
 import Intro from './components/Intro.vue';
 import Layout from './components/Layout.vue';
@@ -22,6 +24,7 @@ import Typography from './components/Typography.vue';
 export default {
   name: 'app',
   components: {
+    Colors,
     DarkFooter,
     Intro,
     Layout,
