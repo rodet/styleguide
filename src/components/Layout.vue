@@ -24,6 +24,10 @@
           Broad layout can also be used together with high color contrast to
           draw the reader's attention.
         </p>
+        <p>
+          In any case, a single column shouldn't be too wide. This is not
+          treated here really so far, but will be implemented in the future.
+        </p>
         <img class='bears-img' src='/static/images/bears.jpg'></img>
       </div>
     </section>
