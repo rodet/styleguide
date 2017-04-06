@@ -2,6 +2,8 @@
 
 > Style guide for my personal websites
 
+This style guide is published under https://rodet.github.io/styleguide/
+
 ## Build Setup
 
 ``` bash
