@@ -7,6 +7,9 @@
       <p>
         {{ madeWith }}
       </p>
+      <!-- <p>
+        <a :href='github.url'>{{ github.name }}</a>
+      </p> -->
     </div>
   </div>
 </template>
@@ -18,6 +21,10 @@ export default {
     return {
       copyright: 'Copyright 2017, Stephane Rodet',
       madeWith: 'Built with Vue.js with care',
+      github: {
+        name: 'GitHub',
+        url: 'https://github.com/rodet/styleguide',
+      },
     };
   },
 };
@@ -30,6 +37,7 @@ export default {
   right: 0;
   background-color: #383838;
   height: 250px;
+  margin-top: 100px;
 }
 
 .dark-footer p {
