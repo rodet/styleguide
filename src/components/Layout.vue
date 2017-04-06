@@ -8,7 +8,7 @@
     <div class='layout__arrow'>
       &harr;
     </div>
-    <section class='layout--full-width layout--light-blue'>
+    <section class='section layout--full-width layout--light-blue'>
       <div class='layout--2col'>
         <h2 class='layout--light-blue'>Lorem Ipsum 1</h2>
         <p>
@@ -24,6 +24,7 @@
           Broad layout can also be used together with high color contrast to
           draw the reader's attention.
         </p>
+        <img class='bears-img' src='/static/images/bears.jpg'></img>
       </div>
     </section>
 
@@ -33,6 +34,7 @@
 <script>
 export default {
   name: 'layout',
+  imageSrc: '/static/images/bears.jpg',
 };
 </script>
 
@@ -42,9 +44,10 @@ export default {
 }
 
 .layout--full-width {
+  box-sizing: border-box;
   margin-left: calc(50% - 50vw);
-  width: 100vw;
   min-height: 200px;
+  width: 100vw;
 }
 
 .layout--light-blue {
@@ -54,8 +57,8 @@ export default {
 
 .layout--2col,
 .layout--3col {
-  padding: 40px;
-  margin: 50px 0;
+  min-height: 100vh;
+  column-gap: 2.369em;
 }
 
 .layout--2col {
@@ -64,6 +67,12 @@ export default {
 
 .layout--3col {
   column-count: 3;
+}
+
+/* Specific to this page */
+.bears-img {
+  height: 100%;
+  object-fit: fill;
 }
 
 </style>
