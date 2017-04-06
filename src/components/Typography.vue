@@ -14,7 +14,8 @@
     <p>
       The scale used for the title font sizes is the Perfect Fourth.
       Starting with a base font size of 16px, a `h4` tag has a size of 1.333em,
-      h3 1.777em, h2 2.369em and h1 3.157. All headers have a margin of 1.5em
+      h3 1.777em, h2 2.369em and h1 4.208em, jumping one step in the scale
+      in order to really stand apart. All headers have a margin of 1.5em
       above them to guarantee them enough space, so they can be detached
       from the former content in a consistent way.
     </p>

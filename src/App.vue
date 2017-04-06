@@ -65,6 +65,11 @@ export default {
   min-height: calc(100vh - 310px);
 }
 
+.section {
+  padding: 2.369em;
+  margin: 2.369em 0;
+}
+
 p {
   text-align: left;
 }
@@ -93,7 +98,8 @@ h2 {
 }
 
 h1 {
-  font-size: 3.157em;
+  font-size: 4.208em;
+  /* font-size: 3.157em; */
 }
 
 ul {
