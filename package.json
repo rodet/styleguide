@@ -52,7 +52,7 @@
     "prettier": "^1.19.1",
     "semver": "^6.3.0",
     "shelljs": "^0.7.8",
-    "url-loader": "^0.5.9",
+    "url-loader": "^0.6.2",
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^2.0.0",
     "vue-template-compiler": "^2.6.11",
