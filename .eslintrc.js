@@ -10,7 +10,11 @@ module.exports = {
     browser: true,
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'airbnb',
+  extends: [
+    "plugin:vue/essential",
+    "plugin:prettier/recommended",
+    "eslint:recommended"
+  ],
   // required to lint *.vue files
   plugins: [
     'html'

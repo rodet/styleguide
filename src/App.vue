@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
   font-family: -apple-system,
               BlinkMacSystemFont,
               "Segoe UI",
@@ -45,7 +45,7 @@ export default {
               sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
   text-align: center;
   color: #2c3e50;
