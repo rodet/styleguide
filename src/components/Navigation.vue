@@ -1,8 +1,8 @@
 <template>
-  <div class='navigation'>
-    <ul class='navigation__list'>
-      <li v-for='item in links' class='navigation__item'>
-        <a class='navigation__link' :href='item.url'>{{ item.name }}</a>
+  <div class="navigation">
+    <ul class="navigation__list">
+      <li v-for="item in links" class="navigation__item" :key="item">
+        <a class="navigation__link" :href="item.url">{{ item.name }}</a>
       </li>
     </ul>
   </div>
@@ -10,17 +10,17 @@
 
 <script>
 export default {
-  name: 'navigation',
+  name: "navigation",
   data() {
     return {
       links: [
-        { name: 'Home', url: '/' },
-        { name: 'Style Guide', url: '/styleguide' },
-        { name: 'Blog', url: 'https://blog.rodet.org' },
-        { name: 'Projects', url: '/projects' },
-      ],
+        { name: "Home", url: "/" },
+        { name: "Style Guide", url: "/styleguide" },
+        { name: "Blog", url: "https://blog.rodet.org" },
+        { name: "Projects", url: "/projects" }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -37,7 +37,6 @@ export default {
 }
 
 .navigation__item {
-
 }
 
 .navigation__link,

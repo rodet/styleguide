@@ -1,7 +1,7 @@
 <template>
-  <div id='app'>
-    <div class='banner'></div>
-    <div class='content'>
+  <div id="app">
+    <div class="banner"></div>
+    <div class="content">
       <intro></intro>
       <typography></typography>
       <!-- TODO Colours -->
@@ -14,35 +14,30 @@
 </template>
 
 <script>
-import Colors from './components/Colors.vue';
-import DarkFooter from './components/DarkFooter.vue';
-import Intro from './components/Intro.vue';
-import Layout from './components/Layout.vue';
-import Navigation from './components/Navigation.vue';
-import Typography from './components/Typography.vue';
+import Colors from "./components/Colors.vue";
+import DarkFooter from "./components/DarkFooter.vue";
+import Intro from "./components/Intro.vue";
+import Layout from "./components/Layout.vue";
+import Navigation from "./components/Navigation.vue";
+import Typography from "./components/Typography.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Colors,
     DarkFooter,
     Intro,
     Layout,
     Navigation,
-    Typography,
-  },
+    Typography
+  }
 };
 </script>
 
 <style>
 .app {
-  font-family: -apple-system,
-              BlinkMacSystemFont,
-              "Segoe UI",
-              Roboto,
-              Helvetica,
-              Arial,
-              sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
@@ -57,7 +52,7 @@ export default {
 }
 
 .banner {
-  background-image: url('./assets/fuzzy-banner.jpg');
+  background-image: url("./assets/fuzzy-banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -82,7 +77,7 @@ h2,
 h3,
 h4 {
   /* Try using Muli from Google for Windows after Avenir */
-  font-family: Avenir, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: Avenir, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #2e3673;
   margin-top: 1.5em;
   line-height: initial;
