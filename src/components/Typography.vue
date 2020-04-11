@@ -52,6 +52,7 @@ export default {
 .inverted h2,
 .inverted h3,
 .inverted h4 {
+  margin: 1rem;
   color: white;
 }
 </style>
