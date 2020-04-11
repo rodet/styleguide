@@ -18,7 +18,7 @@ import Colors from "./components/Colors.vue";
 import DarkFooter from "./components/DarkFooter.vue";
 import Intro from "./components/Intro.vue";
 import Layout from "./components/Layout.vue";
-import Navigation from "./components/Navigation.vue";
+// import Navigation from "./components/Navigation.vue";
 import Typography from "./components/Typography.vue";
 
 export default {
@@ -28,7 +28,7 @@ export default {
     DarkFooter,
     Intro,
     Layout,
-    Navigation,
+    // Navigation,
     Typography
   }
 };

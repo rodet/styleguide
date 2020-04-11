@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <ul class="navigation__list">
-      <li v-for="item in links" class="navigation__item" :key="item">
+      <li v-for="item in links" class="navigation__item" :key="item.name">
         <a class="navigation__link" :href="item.url">{{ item.name }}</a>
       </li>
     </ul>
