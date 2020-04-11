@@ -1,12 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <div class="banner"></div>
     <div class="content">
       <intro></intro>
       <typography></typography>
-      <!-- TODO Colours -->
-      <layout></layout>
       <colors></colors>
+      <layout></layout>
       <!-- TODO Animations / Illustrations -->
     </div>
     <dark-footer></dark-footer>
@@ -36,17 +35,18 @@ export default {
 
 <style>
 .app {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   text-align: center;
   color: #2c3e50;
   margin: auto;
   margin-top: 60px;
-  max-width: 800px;
+  max-width: 70ch;
   min-height: 100%;
   margin-bottom: -250px;
 }
