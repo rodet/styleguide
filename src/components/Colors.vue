@@ -2,9 +2,9 @@
   <div class="colors">
     <h2>Colors</h2>
     <p>
-      Colors set the mood and the appearance of a page. We want something
-      modern and dynamic, basing on blue for the calmness and clarity,
-      and purple for the contrast and dynamism.
+      Colors set the mood and the appearance of a page. We want something modern
+      and dynamic, basing on blue for the calmness and clarity, and purple for
+      the contrast and dynamism.
     </p>
     <div class="colors__palette">
       <div class="colors__color colors__color--darkblue"></div>
@@ -14,14 +14,13 @@
       <div class="colors__color colors__color--pink"></div>
       <div class="colors__color colors__color--turquese"></div>
     </div>
-    <div class="colors__gradient">
-    </div>
+    <div class="colors__gradient"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'colors',
+  name: "colors"
 };
 </script>
 

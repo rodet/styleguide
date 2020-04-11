@@ -2,43 +2,41 @@
   <div class="layout">
     <h2>Layout</h2>
     <p>
-      Usually the content is limited to 800px, adapting to the device width.
-      A padding or margin for the main content has not been defined yet.
+      Usually the content is limited to 800px, adapting to the device width. A
+      padding or margin for the main content has not been defined yet.
     </p>
-    <div class='layout__arrow'>
+    <div class="layout__arrow">
       &harr;
     </div>
-    <section class='section layout--full-width layout--light-blue'>
-      <div class='layout--2col'>
-        <h2 class='layout--light-blue'>Lorem Ipsum 1</h2>
+    <section class="section layout--full-width layout--light-blue">
+      <div class="layout--2col">
+        <h2 class="layout--light-blue">Lorem Ipsum 1</h2>
         <p>
-          It's fine to be bold and use the whole window width when needed.
-          Here also is an example of a multiple columns page. This allows
-          much more interesting layouts, with pictures, text and much more.
-          Such layouts should be preferably exactly one window high, so no
-          scrolling is involved while reading through it.
+          It's fine to be bold and use the whole window width when needed. Here
+          also is an example of a multiple columns page. This allows much more
+          interesting layouts, with pictures, text and much more. Such layouts
+          should be preferably exactly one window high, so no scrolling is
+          involved while reading through it.
         </p>
         <p>
-          The multiple columns should be used for graphical elements,
-          animations and longer texts.
-          Broad layout can also be used together with high color contrast to
-          draw the reader's attention.
+          The multiple columns should be used for graphical elements, animations
+          and longer texts. Broad layout can also be used together with high
+          color contrast to draw the reader's attention.
         </p>
         <p>
           In any case, a single column shouldn't be too wide. This is not
           treated here really so far, but will be implemented in the future.
         </p>
-        <img class='bears-img' src='/static/images/bears.jpg'></img>
+        <img class="bears-img" src="/static/images/bears.jpg" />
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'layout',
-  imageSrc: '/static/images/bears.jpg',
+  name: "layout",
+  imageSrc: "/static/images/bears.jpg"
 };
 </script>
 
@@ -78,5 +76,4 @@ export default {
   height: 100%;
   object-fit: fill;
 }
-
 </style>
