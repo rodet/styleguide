@@ -1,6 +1,6 @@
 <template>
   <div class="dark-footer">
-    <div class='dark-footer__content'>
+    <div class="dark-footer__content">
       <p>
         {{ copyright }}
       </p>
@@ -16,17 +16,17 @@
 
 <script>
 export default {
-  name: 'dark-footer',
+  name: "dark-footer",
   data() {
     return {
-      copyright: 'Copyright 2017, Stephane Rodet',
-      madeWith: 'Built with Vue.js with care',
+      copyright: "Copyright 2017, Stephane Rodet",
+      madeWith: "Built with Vue.js with care",
       github: {
-        name: 'GitHub',
-        url: 'https://github.com/rodet/styleguide',
-      },
+        name: "GitHub",
+        url: "https://github.com/rodet/styleguide"
+      }
     };
-  },
+  }
 };
 </script>
 
@@ -43,7 +43,7 @@ export default {
 .dark-footer p {
   //color: #6b3ee0;
   color: #ccc;
-  color: #D73BB8;
+  color: #d73bb8;
 }
 
 .dark-footer__content {
