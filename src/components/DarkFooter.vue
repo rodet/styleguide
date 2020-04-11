@@ -41,13 +41,11 @@ export default {
 }
 
 .dark-footer p {
-  //color: #6b3ee0;
-  color: #ccc;
   color: #d73bb8;
 }
 
 .dark-footer__content {
-  max-width: 800px;
+  max-width: 70ch;
   margin: auto;
 }
 </style>

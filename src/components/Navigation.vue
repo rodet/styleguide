@@ -36,8 +36,9 @@ export default {
   justify-content: space-around;
 }
 
-.navigation__item {
-}
+/* .navigation__item {
+  blank for now
+} */
 
 .navigation__link,
 .navigation__link:hover,
