@@ -7,9 +7,9 @@
       <p>
         {{ madeWith }}
       </p>
-      <!-- <p>
-        <a :href='github.url'>{{ github.name }}</a>
-      </p> -->
+      <p>
+        <a :href="github.url">{{ github.name }}</a>
+      </p>
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   name: "dark-footer",
   data() {
     return {
-      copyright: "Copyright 2017, Stephane Rodet",
+      copyright: "Copyright 2017-2020, Stephane Rodet",
       madeWith: "Built with Vue.js with care",
       github: {
         name: "GitHub",
@@ -35,13 +35,13 @@ export default {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: #383838;
+  background-color: #383838; /* Might be a bit too dark? */
   height: 250px;
   margin-top: 100px;
 }
 
 .dark-footer p {
-  color: #d73bb8;
+  color: #fefefe; /* #d73bb8 is too strong */
 }
 
 .dark-footer__content {
