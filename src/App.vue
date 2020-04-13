@@ -3,10 +3,10 @@
     <div class="banner"></div>
     <div class="content">
       <intro></intro>
+      <navigation></navigation>
       <typography></typography>
       <colors></colors>
-      <layout></layout>
-      <!-- TODO Animations / Illustrations -->
+      <!-- <layout></layout> -->
     </div>
     <dark-footer></dark-footer>
   </div>
@@ -16,8 +16,8 @@
 import Colors from "./components/Colors.vue";
 import DarkFooter from "./components/DarkFooter.vue";
 import Intro from "./components/Intro.vue";
-import Layout from "./components/Layout.vue";
-// import Navigation from "./components/Navigation.vue";
+// import Layout from "./components/Layout.vue";
+import Navigation from "./components/Navigation.vue";
 import Typography from "./components/Typography.vue";
 
 export default {
@@ -26,14 +26,16 @@ export default {
     Colors,
     DarkFooter,
     Intro,
-    Layout,
-    // Navigation,
+    // Layout,
+    Navigation,
     Typography
   }
 };
 </script>
 
 <style>
+@import "assets/styles/utils.css";
+
 .app {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -52,7 +54,9 @@ export default {
 }
 
 .banner {
-  background-image: url("./assets/fuzzy-banner.jpg");
+  margin: initial -20ch !important;
+  max-width: 110ch !important;
+  background-image: url("./assets/img/fuzzy-banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -97,7 +101,6 @@ h2 {
 
 h1 {
   font-size: 4.208em;
-  /* font-size: 3.157em; */
 }
 
 ul {
