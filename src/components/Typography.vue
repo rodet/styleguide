@@ -1,11 +1,12 @@
 <template>
   <div class="typography">
-    <h2>{{ msg }}</h2>
+    <h2>Typography</h2>
     <p>
       This page contains both an example of the typography and the explanation
       for the choices made.
     </p>
-    <section class="inverted">
+    <h3>Headings</h3>
+    <section class="bordered">
       <h1>h1: Heading 1 example</h1>
       <h2>h2: Heading 2 example</h2>
       <h3>h3: Heading 3 example</h3>
@@ -13,46 +14,28 @@
     </section>
     <p>
       The scale used for the title font sizes is the Perfect Fourth. Starting
-      with a base font size of 16px, a `h4` tag has a size of 1.333em, h3
-      1.777em, h2 2.369em and h1 4.208em, jumping one step in the scale in order
-      to really stand apart. All headers have a margin of 1.5em above them to
-      guarantee them enough space, so they can be detached from the former
-      content in a consistent way.
+      with a base font size of <code>16px</code>, a <code>h4</code> tag has a
+      size of <code>1.333em</code>, <code>h3</code> <code>1.777em</code>,
+      <code>h2</code> <code>2.369em</code> and <code>h1</code>
+      <code>4.208em</code>, jumping one step in the scale in order to really
+      stand apart. All headers have a margin of <code>1.5em</code>
+      above them to guarantee them enough space, so they can be detached from
+      the former content in a consistent way.
     </p>
+    <h3>Font stack</h3>
     <p>
       The font stack prioritizes performance and platform support. This is why
       we use the font Avenir for the headings on Mac/iOS, while the standard
-      text font is the system one.
+      text fonts (sans serif and monospace) uses the system font stack.
     </p>
-    <p>
-      Highlight / Code colour: D73BB8
-    </p>
+    <h3>Hyperlinks</h3>
+    <p>The hyperlinks look like <a href="#">this example</a>.</p>
+    <p>Highlight / Code colour: <code>#D73BB8</code></p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "typography",
-  data() {
-    return {
-      msg: "Typography for this site"
-    };
-  }
+  name: "typography"
 };
 </script>
-
-<style>
-.inverted {
-  overflow: auto;
-  background-color: #2e3673;
-  color: white;
-}
-
-.inverted h1,
-.inverted h2,
-.inverted h3,
-.inverted h4 {
-  margin: 1rem;
-  color: white;
-}
-</style>
