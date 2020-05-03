@@ -40,7 +40,11 @@ export default {
   margin-top: 100px;
 }
 
-.dark-footer p {
+.dark-footer p,
+.dark-footer a,
+.dark-footer a:active,
+.dark-footer a:hover,
+.dark-footer a:visited {
   color: #fefefe; /* #d73bb8 is too strong */
 }
 
