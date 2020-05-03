@@ -45,7 +45,6 @@ export default {
   font-size: 16px;
   line-height: 1.5em;
   text-align: center;
-  color: #2c3e50;
   margin: auto;
   margin-top: 60px;
   max-width: 70ch;
@@ -70,49 +69,5 @@ export default {
 .section {
   padding: 2.369em;
   margin: 2.369em 0;
-}
-
-p {
-  text-align: left;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  /* Try using Muli from Google for Windows after Avenir */
-  font-family: Avenir, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #2e3673;
-  margin-top: 1.5em;
-  line-height: initial;
-}
-
-h4 {
-  font-size: 1.333em;
-}
-
-h3 {
-  font-size: 1.777em;
-}
-
-h2 {
-  font-size: 2.369em;
-}
-
-h1 {
-  font-size: 4.208em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 0 10px;
-}
-
-a {
-  color: #428bca;
 }
 </style>

@@ -1,3 +1,60 @@
+:root {
+  color: #2c3e50;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  color: #2c3e50;
+  text-decoration: none;
+  border-bottom: solid 3px #6bffdf87;
+}
+
+a:hover {
+  border-bottom: solid 3px #6bffe0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* Try using Muli from Google for Windows after Avenir */
+  font-family: Avenir, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #2e3673;
+  margin-top: 1.5em;
+  line-height: initial;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h1 {
+  font-size: 4.208em;
+}
+
+li {
+  margin: 0 10px;
+}
+
+p {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 code {
   border-radius: 10%;
   padding: 0 0.25em;
