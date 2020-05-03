@@ -5,6 +5,7 @@
       This page contains both an example of the typography and the explanation
       for the choices made.
     </p>
+    <h3>Headings</h3>
     <section class="bordered">
       <h1>h1: Heading 1 example</h1>
       <h2>h2: Heading 2 example</h2>
@@ -21,11 +22,14 @@
       above them to guarantee them enough space, so they can be detached from
       the former content in a consistent way.
     </p>
+    <h3>Font stack</h3>
     <p>
       The font stack prioritizes performance and platform support. This is why
       we use the font Avenir for the headings on Mac/iOS, while the standard
       text fonts (sans serif and monospace) uses the system font stack.
     </p>
+    <h3>Hyperlinks</h3>
+    <p>The hyperlinks look like <a href="#">this example</a>.</p>
     <p>Highlight / Code colour: <code>#D73BB8</code></p>
   </div>
 </template>
