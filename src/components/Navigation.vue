@@ -3,7 +3,9 @@
     <h2>Navigation</h2>
     <p>
       Navigation should be clear and simple and focus on the main topics of the
-      website. It is centered like the headlines.
+      website. It is centered like the headlines. No need for a subnavigation at
+      the moment, there is not enough content for this at the moment, and the
+      overall goal is to avoid such a complexity anyway.
     </p>
     <div class="navigation bordered">
       <ul class="navigation__list">
@@ -48,18 +50,9 @@ export default {
 }
 
 .navigation__link {
-  text-decoration: none;
-  color: #2e3673;
   text-transform: uppercase;
+  color: #2e3673;
   font-size: 1.2rem;
   font-weight: 600;
-  transition: 0.3s;
-}
-
-.navigation__link:hover,
-.navigation__link:focus,
-.navigation__link:active {
-  text-decoration: underline;
-  color: #6b3ee0;
 }
 </style>
