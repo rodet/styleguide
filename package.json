@@ -1,69 +1,59 @@
 {
   "name": "styleguide",
-  "version": "0.1.0",
-  "description": "Style guide for my personal websites",
-  "author": "Stephane Rodet <stephane.rodet@gmail.com>",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "babel-core": "^6.26.3",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "chalk": "^4.0.0",
-    "connect-history-api-fallback": "^1.6.0",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^7.1.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.2.1",
+    "eslint": "^6.7.2",
     "eslint-plugin-html": "^6.0.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.2.2",
-    "eventsource-polyfill": "^0.9.6",
-    "express": "^4.17.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
-    "file-loader": "^2.0.0",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "function-bind": "^1.1.1",
-    "html-webpack-plugin": "^3.2.0",
-    "http-proxy-middleware": "^1.0.3",
-    "opn": "^6.0.0",
-    "optimize-css-assets-webpack-plugin": "^3.2.0",
-    "ora": "^4.0.4",
-    "prettier": "^2.0.5",
-    "semver": "^7.3.2",
-    "shelljs": "^0.8.4",
-    "url-loader": "^0.6.2",
-    "vue-loader": "^15.4.2",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^2.7.0",
-    "webpack-bundle-analyzer": "^3.7.0",
-    "webpack-dev-middleware": "^2.0.6",
-    "webpack-hot-middleware": "^2.25.0",
-    "webpack-merge": "^4.2.2"
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
