@@ -7,7 +7,9 @@ module.exports = {
     sourceType: "module"
   },
   env: {
-    browser: true
+    browser: true,
+    amd: true,
+    node: true
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: [
