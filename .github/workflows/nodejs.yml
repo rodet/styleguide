@@ -43,9 +43,9 @@ jobs:
 
     steps:
     - name: Download dist folder
-        uses: actions/download-artifact@v1
-        with:
-          name: dist-folder
+      uses: actions/download-artifact@v1
+      with:
+        name: dist-folder
     - name: Deploy to GitHub Pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v2
