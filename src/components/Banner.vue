@@ -10,17 +10,27 @@ export default {
 
 <style>
 .banner {
-  max-width: 110ch !important;
+  margin: -1em;
+  max-width: 40rem;
   background-image: url("../assets/img/fuzzy-banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 200px;
+  max-height: 400px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 40rem) {
   .banner {
-    margin: initial -20ch !important;
+    max-width: 60rem;
+    margin: 0 calc(20rem - 50vw);
+  }
+}
+
+@media (min-width: 60rem) {
+  .banner {
+    margin: 0 -10rem;
+    height: 20vw;
   }
 }
 

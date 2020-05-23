@@ -37,29 +37,4 @@ export default {
 
 <style>
 @import "assets/styles/utils.css";
-
-.app {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol" !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
-  line-height: 1.5em;
-  text-align: center;
-  margin: auto;
-  margin-top: 60px;
-  max-width: 70ch;
-  min-height: 100%;
-  margin-bottom: -250px;
-}
-
-.content {
-  min-height: calc(100vh - 310px);
-}
-
-.section {
-  padding: 2.369em;
-  margin: 2.369em 0;
-}
 </style>
