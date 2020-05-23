@@ -1,6 +1,6 @@
 module.exports = {
-  assetsDir: 'styleguide/',
   css: {
     modules: true
-  }
+  },
+  publicPath: '/styleguide/'
 };
