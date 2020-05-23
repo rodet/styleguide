@@ -1,2 +1,4 @@
 build/*.js
 config/*.js
+babel.config.js
+vue.config.js

@@ -14,7 +14,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-service": "^4.3.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
@@ -48,7 +48,7 @@
     "not dead"
   ],
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "./node_modules/lint-staged/bin/lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [
