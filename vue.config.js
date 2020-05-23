@@ -1,5 +1,5 @@
 module.exports = {
-  assetsDir: '/styleguide/',
+  assetsDir: 'styleguide/',
   css: {
     modules: true
   }
