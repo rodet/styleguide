@@ -52,4 +52,10 @@ export default {
   max-width: 70ch;
   margin: auto;
 }
+
+@media print {
+  .dark-footer {
+    display: none;
+  }
+}
 </style>
