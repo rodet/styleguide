@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +29,12 @@ jobs:
     - run: npm test
       env:
         CI: true
-  
+    - name: Upload build directory for publishing
+      uses: actions/upload-artifact@v1
+      with:
+        name: dist-folder
+        path: dist/
+
   publish:
 
     needs: build
@@ -37,6 +42,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Download dist folder
+        uses: actions/download-artifact@v1
+        with:
+          name: dist-folder
     - name: Deploy to GitHub Pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v2
