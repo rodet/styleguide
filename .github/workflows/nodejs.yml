@@ -34,23 +34,3 @@ jobs:
       with:
         name: dist-folder
         path: dist/
-
-  publish:
-
-    needs: build
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Download dist folder
-      uses: actions/download-artifact@v1
-      with:
-        name: dist-folder
-    - run: ls -R dist-folder/
-    - name: Deploy to GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v2
-      with:
-        build_dir: dist-folder
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
