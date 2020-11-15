@@ -38,10 +38,12 @@ export default {
   background-color: #383838; /* Might be a bit too dark? */
   height: 250px;
   margin-top: 100px;
+  padding: 2em;
 }
 
 .dark-footer p,
 .dark-footer a,
+.dark-footer a:link,
 .dark-footer a:active,
 .dark-footer a:hover,
 .dark-footer a:visited {
@@ -51,5 +53,11 @@ export default {
 .dark-footer__content {
   max-width: 70ch;
   margin: auto;
+}
+
+@media print {
+  .dark-footer {
+    display: none;
+  }
 }
 </style>
