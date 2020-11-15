@@ -15,15 +15,14 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-service": "^4.3.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.2.2",
-    "gh-pages": "^2.2.0",
-    "lint-staged": "^10.2.2",
+    "lint-staged": "^10.2.9",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
@@ -50,7 +49,7 @@
     "not dead"
   ],
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "./node_modules/lint-staged/bin/lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [

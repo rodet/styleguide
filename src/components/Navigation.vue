@@ -1,3 +1,4 @@
+<!-- TODO Ensure the navigation works on mobile too -->
 <template>
   <section>
     <h2>Navigation</h2>
