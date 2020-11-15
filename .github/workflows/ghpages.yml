@@ -1,11 +1,8 @@
 name: GitHub Pages publish
 
 on:
-  workflow_run:
-    workflows: ["Node.js CI"]
-    branches: [master]
-    types:
-      - completed
+  push:
+    branches: master
 
 jobs:
   publish:
